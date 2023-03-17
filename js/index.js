@@ -1,4 +1,4 @@
-const urlApi = `https://kanap-lek8.onrender.com/api/products` 
+const urlApi = `hhttps://kanapback.onrender.com/api/products` 
 
 // Get product data from API
 fetch(urlApi)

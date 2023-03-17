@@ -1,6 +1,6 @@
 const parameter = (new URL(document.location)).searchParams//Chargement des paramètres de l'URL
 const idCurrentPageProduct = parameter.get("id")//Recherche du parametre "id" dans l'URL
-const urlApi = `https://kanap-lek8.onrender.com/api/products/${idCurrentPageProduct}`//Chargement des caractéristiques du produit depuis l'API
+const urlApi = `hhttps://kanapback.onrender.com/api/products/${idCurrentPageProduct}`//Chargement des caractéristiques du produit depuis l'API
 
 // Obtention des données d'un produit
 fetch(urlApi)

@@ -12,7 +12,7 @@ if(arrayBasketProducts.length > 0){
 
 // Récupération des données de tous les produits de l'API pour les mettre dans le tableau 'datasProductsApi'
 async function getDatasFromAPI(){
-    const urlApi = await fetch(`https://kanap-lek8.onrender.com/api/products`)
+    const urlApi = await fetch(`hhttps://kanapback.onrender.com/api/products`)
     datasProductsApi = await urlApi.json()
     init(datasProductsApi)
     showCart(datasProductsApi)// Fonction qui affiche le panier
@@ -287,7 +287,7 @@ const emailFormValue = document.getElementById("email").value
         alert("Le formulaire est incomplet. Veuillez remplir tous les champs du formulaire")
     }else{
         if (arrayBasketProducts.length > 0 && firstNameFormValue!= "" && lastNameFormValue!="" && addressFormValue!="" && cityFormValue!="" && emailFormValue!="" ){//Condition pour l'envoi au backEnd : localStorage et champs du formulaire non vides
-            fetch("https://kanap-lek8.onrender.com/api/products/order", optionsRequest)
+            fetch("hhttps://kanapback.onrender.com/api/products/order", optionsRequest)
                 .then(response => response.json())
                 .then(data => {
                     localStorage.clear()//Suppression de produits dans le LS
